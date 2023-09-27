@@ -27,8 +27,11 @@ int main() {
         return 0;
     }
 
+    vector<int> path;
+    path.push_back(1);
+    path.push_back(n);
+
     vector<int> dp(n);
-    vector<int> path = {1, n};
     dp[0] = flies[0];
     dp[1] = INT_MIN;
     dp[2] = flies[0] + flies[2];
